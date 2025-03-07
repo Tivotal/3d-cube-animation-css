@@ -25,11 +25,13 @@ body {
 
 @keyframes rotate {
   0% {
-    transform: rotateX(-30deg) rotateY(0);
+    transform: rotateX(-30deg) 
+               rotateY(0);
   }
 
   100% {
-    transform: rotateX(-30deg) rotateY(360deg);
+    transform: rotateX(-30deg)
+               rotateY(360deg);
   }
 }
 
@@ -63,7 +65,8 @@ body {
     rgb(5, 223, 210) 99%,
     rgb(5, 229, 217) 100%
   );
-  transform: rotateY(calc(90deg * var(--i))) translateZ(50px);
+  transform: rotateY(calc(90deg * var(--i))) 
+             translateZ(50px);
 }
 
 .cube .top {
@@ -72,7 +75,8 @@ body {
   height: 100px;
   background: rgb(36, 12, 31);
   transform-style: preserve-3d;
-  transform: rotateX(90deg) translateZ(50px);
+  transform: rotateX(90deg) 
+             translateZ(50px);
 }
 
 .cube .top::before {
@@ -83,6 +87,8 @@ body {
   background: rgba(2, 106, 97, 0.5);
   transform: translateZ(-120px);
   filter: blur(10px);
-  box-shadow: 0 0 10px #323232, 0 0 20px rgb(2, 106, 97), 0 0 30px #323232,
-    0 0 40px rgb(2, 106, 97);
+  box-shadow: 0 0 10px #323232, 
+              0 0 20px rgb(2, 106, 97),
+              0 0 30px #323232,
+              0 0 40px rgb(2, 106, 97);
 }
